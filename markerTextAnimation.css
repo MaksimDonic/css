@@ -1,0 +1,33 @@
+      yourElement {
+        background-color: #fecf49;
+        content: '';
+        -ms-transform: rotate(0.5deg);
+        -webkit-transform: rotate(0.5deg);
+        transform: rotate(-0.5deg);
+        height: 100px;
+        display: inline-block;
+        position: absolute;
+        top: -3px;
+        border-radius: 2px;
+        width: calc(100% + 20px);
+        z-index: -1;
+        left: 0px;
+
+        -webkit-animation: animateThis 0.3s ease-in;
+				-webkit-animation-fill-mode: forwards;
+	    		transform: rotate(-0.5deg);
+
+}
+@-webkit-keyframes animateThis {
+			0% {
+				width: 0px;
+				height: 100px;
+				opacity: 0;
+			}
+			100% {
+				width: 100%;
+				height: 100px;
+				opacity: 1;
+
+			}
+		}
